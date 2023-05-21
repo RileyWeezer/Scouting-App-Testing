@@ -3,11 +3,12 @@
     <string name="start_button_text">START</string>
     <string name="start_text">SOTAbots</string>
     <string name="title_activity_select_team">SelectTeam</string>
-    <string name="team_title">Select Team</string>
+    <string name="team_title">Team Number</string>
     <string name="red_1">RED 1</string>
     <string name="red_2">RED 2</string>
     <string name="red_3">RED 3</string>
     <string name="blue_1">BLUE 1</string>
     <string name="blue_3">BLUE 3</string>
     <string name="blue_2">BLUE 2</string>
+    <string name="enter">ENTER</string>
 </resources>

@@ -3,6 +3,7 @@ package com.example.scoutingappepiccoolsteamworks
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,6 +19,7 @@ class SelectTeam : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.team_select)
+
             val bRed1 = findViewById<Button>(R.id.red1)
             bRed1.setOnClickListener {
                 val intent = Intent(this, MainActivity::class.java)
@@ -47,6 +49,12 @@ class SelectTeam : ComponentActivity() {
             bBlue3.setOnClickListener {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
+            }
+            val editText = findViewById<EditText>(R.id.teamNum)
+            val button = findViewById<Button>(R.id.enter)
+            button.setOnClickListener {
+                val text = editText.text.toString()
+                // Do something with the text
             }
 
         }
