@@ -3,6 +3,7 @@ package com.example.scoutingappepiccoolsteamworks
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -18,6 +19,10 @@ class Teleop : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.teleop_layout)
+
+        val showTeam = findViewById<TextView>(R.id.teamNumberTele)
+        val number = intent.getStringExtra("teamNumInput")
+        showTeam.setText(number);
 
         val bLowTele = findViewById<Button>(R.id.low_tele)
         var low = 0
@@ -67,6 +72,7 @@ class Teleop : ComponentActivity() {
         val bFinish = findViewById<Button>(R.id.finsih)
         bFinish.setOnClickListener {
             var intent = Intent(this, End::class.java)
+            intent.putExtra("teamNumberInput",number)
             startActivity(intent)
         }
     }

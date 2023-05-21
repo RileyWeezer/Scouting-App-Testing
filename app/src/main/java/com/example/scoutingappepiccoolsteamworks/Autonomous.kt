@@ -21,9 +21,9 @@ class Autonomous : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.autonomous_layout)
 
-//            val showTeam = findViewById<TextView>(R.id.teamNumber)
-//            val text = intent.getStringExtra("teamNumberInput")
-//            showTeam.setText(text);
+            val showTeam = findViewById<TextView>(R.id.teamNumber)
+            val number = intent.getStringExtra("teamNumInput")
+            showTeam.setText(number);
 
 
             val bMobility = findViewById<Button>(R.id.mobility)
@@ -74,6 +74,7 @@ class Autonomous : ComponentActivity() {
             val bToTele = findViewById<Button>(R.id.tele_switch)
             bToTele.setOnClickListener {
                 val intent = Intent(this, Teleop::class.java)
+                intent.putExtra("teamNumInput",number)
                 startActivity(intent)
             }
 
