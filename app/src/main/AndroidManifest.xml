@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ScoutingAppEpicCoolSteamworks"
         tools:targetApi="31">
         <activity
+            android:name=".End"
+            android:exported="false"
+            android:label="@string/title_activity_end"
+            android:theme="@style/Theme.ScoutingAppEpicCoolSteamworks" />
+        <activity
+            android:name=".Teleop"
+            android:exported="false"
+            android:label="@string/title_activity_teleop"
+            android:theme="@style/Theme.ScoutingAppEpicCoolSteamworks" />
+        <activity
+            android:name=".Autonomous"
+            android:exported="false"
+            android:label="@string/title_activity_autonomous"
+            android:theme="@style/Theme.ScoutingAppEpicCoolSteamworks" />
+        <activity
             android:name=".SelectTeam"
             android:exported="false"
             android:label="@string/title_activity_select_team"

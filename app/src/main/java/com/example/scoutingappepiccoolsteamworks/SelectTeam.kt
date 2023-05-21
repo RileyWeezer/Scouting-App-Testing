@@ -22,57 +22,42 @@ class SelectTeam : ComponentActivity() {
 
             val bRed1 = findViewById<Button>(R.id.red1)
             bRed1.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Autonomous::class.java)
                 startActivity(intent)
             }
             val bRed2 = findViewById<Button>(R.id.red2)
             bRed2.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Autonomous::class.java)
                 startActivity(intent)
             }
             val bRed3 = findViewById<Button>(R.id.red3)
             bRed3.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Autonomous::class.java)
                 startActivity(intent)
             }
             val bBlue1 = findViewById<Button>(R.id.blue1)
             bBlue1.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Autonomous::class.java)
                 startActivity(intent)
             }
             val bBlue2 = findViewById<Button>(R.id.blue2)
             bBlue2.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Autonomous::class.java)
                 startActivity(intent)
             }
             val bBlue3 = findViewById<Button>(R.id.blue3)
             bBlue3.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, Autonomous::class.java)
                 startActivity(intent)
             }
             val editText = findViewById<EditText>(R.id.teamNum)
             val button = findViewById<Button>(R.id.enter)
             button.setOnClickListener {
                 val text = editText.text.toString()
-                // Do something with the text
+                val intent = Intent(this, Autonomous::class.java)
+                intent.putExtra("teamNum", text)
+                startActivity(intent)
             }
 
         }
     }
-
-
-@Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview2() {
-    ScoutingAppEpicCoolSteamworksTheme {
-        Greeting2("Android")
-    }
-}

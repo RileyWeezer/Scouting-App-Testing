@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474747">
+
+    <TextView
+        android:id="@+id/teamNumberTele"
+        android:background="#242424"
+        android:text="@string/default_team"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </TextView>
+
+    <TextView
+        android:text="Tele-operated"
+        android:background="#282828"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/low_tele"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Low Fuel: 0"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+    <Button
+        android:id="@+id/high_tele"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="High Fuel: 0"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/rotor_tele"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Rotor Spin: No"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/takeoff_tele"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:background="#282828"
+        android:text="Takeoff Ready: no"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/penalty_tele"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Penalty: 0"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/finsih"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="176dp"
+        android:background="#282828"
+        android:text="finished"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/undo_tele"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="-75dp"
+        android:layout_marginStart="30dp"
+        android:background="#282828"
+        android:text="Undo"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+</LinearLayout>

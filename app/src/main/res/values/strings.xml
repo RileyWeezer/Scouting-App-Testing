@@ -11,4 +11,8 @@
     <string name="blue_3">BLUE 3</string>
     <string name="blue_2">BLUE 2</string>
     <string name="enter">ENTER</string>
+    <string name="title_activity_autonomous">Autonomous</string>
+    <string name="default_team">0000</string>
+    <string name="title_activity_teleop">Teleop</string>
+    <string name="title_activity_end">End</string>
 </resources>

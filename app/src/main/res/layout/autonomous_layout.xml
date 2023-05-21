@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474747">
+
+    <TextView
+        android:id="@+id/teamNumber"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="#242424"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_team">
+    </TextView>
+
+    <TextView
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Autonomous"
+        android:textSize="50sp"
+        android:background="#282828"
+        android:textColor="@color/white"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/mobility"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Mobility: No"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/low_auto"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Low Score: 0"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/high_auto"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="High Score: 0"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/rotor_auto"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Rotor Spin: No"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/penalty_auto"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Penalty: 0"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/tele_switch"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="76dp"
+        android:background="#282828"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </Button>
+
+</LinearLayout>
