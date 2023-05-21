@@ -20,10 +20,10 @@ class Autonomous : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.autonomous_layout)
-//            val textView = findViewById<TextView>(R.id.teamNum)
+
 //            val showTeam = findViewById<TextView>(R.id.teamNumber)
-//            val text = textView.text.toString()
-//            showTeam.setText(text.toString())
+//            val text = intent.getStringExtra("teamNumberInput")
+//            showTeam.setText(text);
 
 
             val bMobility = findViewById<Button>(R.id.mobility)

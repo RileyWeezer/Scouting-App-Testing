@@ -55,7 +55,7 @@ class SelectTeam : ComponentActivity() {
             button.setOnClickListener {
                 val text = editText.text.toString()
                 val intent = Intent(this, Autonomous::class.java)
-                intent.putExtra("teamNum", text)
+                intent.putExtra("teamNumInput", text)
                 startActivity(intent)
             }
 
