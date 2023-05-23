@@ -1,6 +1,7 @@
 package com.example.scoutingappepiccoolsteamworks
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -24,6 +25,10 @@ class Autonomous : ComponentActivity() {
             val showTeam = findViewById<TextView>(R.id.teamNumber)
             val number = intent.getStringExtra("teamNumberInput")
             showTeam.setText(number);
+            val backColor = intent.getStringExtra("alliance")
+            val textColor = intent.getStringExtra("text")
+            showTeam.setBackgroundColor(Color.parseColor(backColor))
+            showTeam.setTextColor(Color.parseColor(textColor))
 
 
             val bMobility = findViewById<Button>(R.id.mobility)
@@ -75,6 +80,8 @@ class Autonomous : ComponentActivity() {
             bToTele.setOnClickListener {
                 val intent = Intent(this, Teleop::class.java).apply {
                     putExtra("teamNumberInput",number)
+                    putExtra("alliance", backColor)
+                    putExtra("text", textColor)
                 }
 
                 startActivity(intent)

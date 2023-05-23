@@ -7,14 +7,14 @@
 
     <EditText
         android:id="@+id/teamNum"
-        android:layout_width="251dp"
+        android:layout_width="411dp"
         android:layout_height="100dp"
         android:layout_marginTop="30dp"
         android:background="#242424"
         android:hint="@string/team_title"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textSize="45sp"
         android:textAlignment="center"/>
 
     <Button
@@ -26,7 +26,7 @@
         android:textSize="30sp"
         android:textColor="@color/white"
         android:layout_marginStart="240dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="60dp" />
 
     <Button
         android:id="@+id/blue2"
@@ -80,15 +80,15 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp" />
 
-    <Button
-        android:id="@+id/enter"
-        android:layout_width="160dp"
-        android:layout_height="100dp"
-        android:text="@string/enter"
-        android:background="@color/black"
-        android:textColor="@color/white"
-        android:textSize="38sp"
-        android:layout_marginTop="-508dp"
-        android:layout_marginStart="251dp"/>
+<!--    <Button-->
+<!--        android:id="@+id/enter"-->
+<!--        android:layout_width="160dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:text="@string/enter"-->
+<!--        android:background="@color/black"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="38sp"-->
+<!--        android:layout_marginTop="-508dp"-->
+<!--        android:layout_marginStart="251dp"/>-->
 
 </LinearLayout>

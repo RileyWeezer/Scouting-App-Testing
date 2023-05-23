@@ -1,6 +1,7 @@
 package com.example.scoutingappepiccoolsteamworks
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -23,6 +24,10 @@ class End : ComponentActivity() {
         val showTeam = findViewById<TextView>(R.id.teamNumberEnd)
         val number = intent.getStringExtra("teamNumberInput")
         showTeam.setText(number);
+        val backColor = intent.getStringExtra("alliance")
+        val textColor = intent.getStringExtra("text")
+        showTeam.setBackgroundColor(Color.parseColor(backColor))
+        showTeam.setTextColor(Color.parseColor(textColor))
 
         var bWin = findViewById<Button>(R.id.win)
         bWin.setOnClickListener {

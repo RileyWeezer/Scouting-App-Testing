@@ -19,65 +19,63 @@ class SelectTeam : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.team_select)
-        var hasNum = false;
         val intent = Intent(this@SelectTeam, Autonomous::class.java)
         val editText = findViewById<EditText>(R.id.teamNum)
 
-        val bNumEnter = findViewById<Button>(R.id.enter)
-        bNumEnter.setOnClickListener {
-            val teamNum = editText.text.toString()
-            intent.apply { putExtra("teamNumberInput", teamNum) }
-            hasNum = true;
-        }
-
         val bRed1 = findViewById<Button>(R.id.red1)
         bRed1.setOnClickListener {
-                if(hasNum) {
-                    startActivity(intent)
-                } else {
-
-                }
+            intent.apply {
+                putExtra("teamNumberInput", editText.text.toString())
+                putExtra("alliance", "#ff0000")
+                putExtra("text", "#000000")
             }
-            val bRed2 = findViewById<Button>(R.id.red2)
-            bRed2.setOnClickListener {
-                if(hasNum) {
-                    startActivity(intent)
-                } else {
-
-                }
+            startActivity(intent)
+        }
+        val bRed2 = findViewById<Button>(R.id.red2)
+        bRed2.setOnClickListener {
+            intent.apply {
+                putExtra("teamNumberInput", editText.text.toString())
+                putExtra("alliance", "#ff0000")
+                putExtra("text", "#000000")
             }
-            val bRed3 = findViewById<Button>(R.id.red3)
-            bRed3.setOnClickListener {
-                if(hasNum) {
-                    startActivity(intent)
-                } else {
-
-                }
+            startActivity(intent)
+        }
+        val bRed3 = findViewById<Button>(R.id.red3)
+        bRed3.setOnClickListener {
+            intent.apply {
+                putExtra("teamNumberInput", editText.text.toString())
+                putExtra("alliance", "#ff0000")
+                putExtra("text", "#000000")
             }
-            val bBlue1 = findViewById<Button>(R.id.blue1)
-            bBlue1.setOnClickListener {
-                if(hasNum) {
-                    startActivity(intent)
-                } else {
-
-                }
+            startActivity(intent)
+        }
+        val bBlue1 = findViewById<Button>(R.id.blue1)
+        bBlue1.setOnClickListener {
+            intent.apply {
+                putExtra("teamNumberInput", editText.text.toString())
+                putExtra("alliance", "#170cf0")
+                putExtra("text", "#ffffff")
             }
-            val bBlue2 = findViewById<Button>(R.id.blue2)
-            bBlue2.setOnClickListener {
-                if(hasNum) {
-                    startActivity(intent)
-                } else {
-
-                }
+            startActivity(intent)
+        }
+        val bBlue2 = findViewById<Button>(R.id.blue2)
+        bBlue2.setOnClickListener {
+            intent.apply {
+                putExtra("teamNumberInput", editText.text.toString())
+                putExtra("alliance", "#170cf0")
+                putExtra("text", "#ffffff")
             }
-            val bBlue3 = findViewById<Button>(R.id.blue3)
-            bBlue3.setOnClickListener {
-                if(hasNum) {
-                    startActivity(intent)
-                } else {
-
-                }
+            startActivity(intent)
+        }
+        val bBlue3 = findViewById<Button>(R.id.blue3)
+        bBlue3.setOnClickListener {
+            intent.apply {
+                putExtra("teamNumberInput", editText.text.toString())
+                putExtra("alliance", "#170cf0")
+                putExtra("text", "#ffffff")
             }
+            startActivity(intent)
+        }
 
 
 
