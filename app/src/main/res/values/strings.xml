@@ -15,4 +15,5 @@
     <string name="default_team">0000</string>
     <string name="title_activity_teleop">Teleop</string>
     <string name="title_activity_end">End</string>
+    <string name="teamNumber">team_number_input</string>
 </resources>

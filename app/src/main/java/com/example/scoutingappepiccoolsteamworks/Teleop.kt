@@ -21,7 +21,7 @@ class Teleop : ComponentActivity() {
         setContentView(R.layout.teleop_layout)
 
         val showTeam = findViewById<TextView>(R.id.teamNumberTele)
-        val number = intent.getStringExtra("teamNumInput")
+        val number = intent.getStringExtra("teamNumberInput")
         showTeam.setText(number);
 
         val bLowTele = findViewById<Button>(R.id.low_tele)
@@ -71,8 +71,9 @@ class Teleop : ComponentActivity() {
 
         val bFinish = findViewById<Button>(R.id.finsih)
         bFinish.setOnClickListener {
-            var intent = Intent(this, End::class.java)
-            intent.putExtra("teamNumberInput",number)
+            val intent = Intent(this, End::class.java).apply {
+                putExtra("teamNumberInput", number)
+            }
             startActivity(intent)
         }
     }

@@ -21,7 +21,7 @@ class End : ComponentActivity() {
         setContentView(R.layout.end_layout)
 
         val showTeam = findViewById<TextView>(R.id.teamNumberEnd)
-        val number = intent.getStringExtra("teamNumInput")
+        val number = intent.getStringExtra("teamNumberInput")
         showTeam.setText(number);
 
         var bWin = findViewById<Button>(R.id.win)
